@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/milan-fleas/static/css/main.69066075.css",
+    "main.js": "/milan-fleas/static/js/main.c38a5756.js",
+    "index.html": "/milan-fleas/index.html",
+    "main.69066075.css.map": "/milan-fleas/static/css/main.69066075.css.map",
+    "main.c38a5756.js.map": "/milan-fleas/static/js/main.c38a5756.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69066075.css",
+    "static/js/main.c38a5756.js"
+  ]
+}
