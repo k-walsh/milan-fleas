@@ -22,13 +22,19 @@ function Main() {
 
   return (
     <div className="main">
-      <img
-        src={`${process.env.PUBLIC_URL}/construction.png`}
-        alt="under construction"
-        style={{ position: "absolute", top: 50, left: 100 }}
-      />
-      <div className="top">
-        <h1>Milan Fleas</h1>
+      <div
+        className="top"
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL}/bg.jpeg)`,
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+          margin: "0 0 -20px 0",
+        }}
+      >
+        <h1>
+          Milan <span id="bigF">F</span>leas
+        </h1>
         <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
           <h2>Show me flea markets on </h2>
           <Select
@@ -67,6 +73,7 @@ function Main() {
           <p>no fleas on this day</p>
         )}
       </div>
+      <div className="foot"></div>
     </div>
   );
 }

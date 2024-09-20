@@ -1,3 +1,7 @@
+:root {
+  --padding-size: 10vh;
+}
+
 .item {
   display: flex;
   justify-content: flex-start;
@@ -23,14 +27,9 @@
 
 .main {
   margin: 0 25vw;
-  padding: 110px 0;
   opacity: 1;
   z-index: 1;
-  /* background-image: url("https://s.inyourpocket.com/gallery/110280.jpg");
-  background-size: "cover";
-  height: 100vh;
-  margin-top: -70px;
-  background-repeat: no-repeat; */
+  padding-bottom: var(--padding-size);
 }
 
 h1 {
@@ -45,6 +44,12 @@ h1::first-letter {
   font-weight: 400;
 }
 
+#bigF {
+  font-size: 56px;
+  margin-right: -2px;
+  margin-bottom: 2px;
+}
+
 h2,
 p {
   font-family: "Lato", sans-serif;
@@ -55,16 +60,23 @@ p {
 .top {
   position: -webkit-sticky;
   position: sticky;
-  top: 110px;
-  /* top: 0; */
+  top: 0;
   z-index: 1000;
+  padding-top: var(--padding-size);
 }
 
 .content {
-  position: absoulte;
-  top: 300px;
+  margin-top: 40px;
   z-index: 90;
-  overflow: hidden;
 }
 
-
+.top::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(251, 251, 251, 0.5);
+}
