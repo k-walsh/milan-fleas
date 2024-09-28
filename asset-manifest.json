@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/milan-fleas/static/css/main.d417e01a.css",
+    "main.css": "/milan-fleas/static/css/main.661f536f.css",
     "main.js": "/milan-fleas/static/js/main.08a377e8.js",
     "index.html": "/milan-fleas/index.html",
-    "main.d417e01a.css.map": "/milan-fleas/static/css/main.d417e01a.css.map",
+    "main.661f536f.css.map": "/milan-fleas/static/css/main.661f536f.css.map",
     "main.08a377e8.js.map": "/milan-fleas/static/js/main.08a377e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.d417e01a.css",
+    "static/css/main.661f536f.css",
     "static/js/main.08a377e8.js"
   ]
 }
