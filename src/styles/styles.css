@@ -38,6 +38,12 @@
   }
 }
 
+@media (max-width: 450px) {
+  .main {
+    margin: 0 25px;
+  }
+}
+
 h1 {
   font-family: "Dancing Script", cursive;
   font-size: 48px;
