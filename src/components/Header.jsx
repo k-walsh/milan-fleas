@@ -1,6 +1,5 @@
 function Header(props) {
   //   const market = props.
-  console.log(props);
   return (
     <div className="item">
       <p id="name">{props.name}</p>

@@ -5,6 +5,11 @@ import { Collapse, Select } from "antd";
 import { useState } from "react";
 import CollapsePanel from "antd/es/collapse/CollapsePanel";
 import Header from "./Header";
+import { FaMapPin } from "react-icons/fa";
+import { FaC, FaInstagram } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa";
+import { GoInfo } from "react-icons/go";
+import { FaFacebook } from "react-icons/fa";
 
 function Main() {
   const [fleas, setFleas] = useState(markets);
@@ -65,6 +70,54 @@ function Main() {
               onChange={() => console.log("hiii")}
             >
               <CollapsePanel header={<Header {...market} />} key={market.name}>
+                {console.log(market.adressLink)}
+
+                <div className="links">
+                  <a href={market.addressLink} target="_blank" rel="noreferrer">
+                    <FaMapPin /> {market.address}
+                  </a>
+
+                  <div className="more">
+                    {market.instagram && (
+                      <a
+                        href={market.instagram}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaInstagram size={"24px"} />
+                      </a>
+                    )}
+
+                    {market.facebook && (
+                      <a
+                        href={market.facebook}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaFacebook size={"24px"} />
+                      </a>
+                    )}
+
+                    {market.tiktok && (
+                      <a href={market.tiktok} target="_blank" rel="noreferrer">
+                        <FaTiktok size={"20px"} />
+                      </a>
+                    )}
+
+                    {market.website && (
+                      <a href={market.website} target="_blank" rel="noreferrer">
+                        <GoInfo size={"24px"} />
+                      </a>
+                    )}
+                  </div>
+                </div>
+
+                {market.exception && (
+                  <p>
+                    <i>*** {market.exception}</i>
+                  </p>
+                )}
+
                 <p>{market.description}</p>
               </CollapsePanel>
             </Collapse>
@@ -85,7 +138,6 @@ export default Main;
  * margins and spacing for mobile and smaller windows
  * scroll button to scroll to top
  * info button explaining some sources and copy paste - and image rights - no intent to copy
- * clip the main content so doesn't see through the header milan fleas
  *
  * each body content
  *  - add exception if needed at top in italics
